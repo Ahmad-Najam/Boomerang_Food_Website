@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title>
+            Cart
+        </title>
+        <style>
+            *
+                {
+                    padding: 0;
+                    margin: 0;
+                    text-decoration: none;
+                    list-style: none;
+                    box-sizing: border-box;
+                }
+            body
+                {
+                    background-color: rgb(152, 152, 194);
+                }
+            label.title
+                {
+                    float: left;
+                    margin-top: 10px;
+                    margin-right: -50px;
+                    font-family: fantasy;
+                    font-size: 35px;
+                    line-height: 60px;
+                    padding: 0 65px;
+                    font-weight: bold;
+                    color: white
+                }
+            img.logo 
+                {
+                    width: 55px;
+                    margin-top: 12px;
+                    border-radius: 50px;
+                }
+            center
+                {
+                    color: black;
+                    font-size: xx-large;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                } 
+            input[type=text]      
+                {
+                    width: 100%; 
+                    margin: 10px 0;
+                    padding: 15px 10px; 
+                    display: inline-block; 
+                    border: 1px solid rgb(1, 0, 2); 
+                    box-sizing: border-box;
+                }   
+            nav
+                {
+                    background: rgb(93, 124, 180);
+                    height: 80px;
+                    width: 100%;
+                }
+            nav ul
+                {      
+                    float: right;
+                    margin-right: 20px; 
+                }
+            nav ul li
+                {   
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 3px; 
+                }    
+            nav ul li a
+                {
+                    color: white;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    padding:7px 13;
+                }
+            a.active,a:hover
+                {
+                    background: rgb(152, 152, 194);
+                    transition: 1s; 
+                }
+            .footer
+                {
+                    background-color: rgb(93, 124, 180);
+                    margin-top: 80px;
+                }
+            .row
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            .below
+                {
+                    width: 20%;
+                }
+            .below h4
+                {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    margin-left: 100px;
+                    margin-top: 7px;
+                }
+            .below ul
+                {
+                    margin-bottom: 31px;
+                    margin-left: 100px;
+                }
+            .below ul li a
+                {
+                    font-size: 15px;
+                    color: white;
+                    font-family: fantasy;
+                }
+            .wrapper
+                {
+                    width:1200px;
+                    margin:100px auto;
+                }
+            .menu
+                {
+                    display:flex;
+                    flex-wrap:wrap;
+                    justify-content:space-between;
+                }
+            .single-menu
+                {
+                    display:flex;
+                    flex-direction:row;
+                    align-items:center;
+                    flex-basis:580px;
+                    margin-bottom:40px;
+                    padding-bottom:40px;
+                }
+            .single-menu:nth-child(5), .single-menu:nth-child(6)
+                {
+                    border-bottom:0;
+                }
+            .single-menu img
+                {
+                    max-width:180px;
+                    margin-right:30px;
+                    background: white;
+                    padding:3px;
+                    transition:.5s;
+                    border-radius: 50%;
+                }   
+            .single-menu h4
+                {   
+                    color: white;
+                    font-size:22px;
+                    border-bottom: rgb(255, 255, 255);
+                    margin-bottom:5px;
+                    padding-bottom:5px;
+                }
+            .single-menu h4 span
+                {
+                    margin-left: 50px;
+                    color:#ffffff;
+                    font-style: normal;
+                }
+            .single-menu h5 button
+                {
+                    margin-top: 30px;
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+            .single-menu p1
+                {
+                    color: white;
+                }
+            .box
+                {
+                    margin-top: -75px;
+                }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="./boom.jpg">
+            <label class = "title"> BOOMERANG </label>
+            <ul>
+                <li><a href="./Sign-In.html"> My Account </a></li>
+                <li><a href="./Home.html"> Home </a></li>
+                <li><a href="./Menu.html"> Menu </a></li>
+                <li><a href="./Deals.html"> Deals </a></li>
+                <li><a class = "active" href="./Cart.html"> My Cart </a></li>
+                <li><a href="./Payment.html"> Proceed to Payment </a></li>
+            </ul>
+        </nav>
+        <center> CART </center>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="single-menu">
+                    <img src="./7.jpg">
+                    <div class="menu-content">
+                        <h4>Mutton Biryani <span>    RS-250</span></h4>
+                        <p1> Served along with Raita n Cold Drink </p1>
+                        <h5><button>REMOVE FROM CART</button></h5>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="./(4).jpg">
+                    <div class="menu-content">
+                        <h4>Quick Quadro <span>    RS-1000</span></h4>
+                        <p1> 4 Chicken Burgers, Fries, Pepsi </p1>
+                        <h5><button>REMOVE FROM CART</button></h5>                        
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="./5.png">
+                    <div class="menu-content">
+                        <h4>Alfarado Pasta <span>    RS-150</span></h4>
+                        <p1> Delicious Noodles dropped in Mayo </p1>
+                        <h5><button>REMOVE FROM CART</button></h5>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="./(6).jpg">
+                    <div class="menu content">
+                        <h4>Midnight Deal <span>    RS-1200</span></h4>
+                        <p1> 3 Zinger Burgers, Fries, Pepsi </p1>
+                        <h5><button>REMOVE FROM CART</button></h5>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <form>
+            <div class="box"></div>
+            <center> 
+                <label><h1>  FINAL : 2750  </h1></label> 
+                <label><h2>  TOTAL : 2600  </h1></label> 
+                <label><h3>  DELIVERY : 100  </h2> </label> 
+                <label><h4>  TAX : 50  </h4></label>
+            </center> 
+            </div> 
+        </form>  
+        <footer class = "footer">
+            <div class="row">
+                <div class="below">
+                    <h4> CONTACT US </h4>
+                    <ul>
+                        <li><a href=""> Cell-Phone </a></li>
+                        <li><a href=""> Landline </a></li>
+                        <li><a href=""> Email </a></li>
+                        <li><a href=""> Fax </a></li>
+                    </ul>
+                </div>
+                <div class="below">
+                    <h4> MAIN BRANCHES </h4>
+                    <ul>
+                        <li><a href=""> Rawalpindi </a></li>
+                        <li><a href=""> Islamabad </a></li>
+                        <li><a href=""> Karachi </a></li>
+                        <li><a href=""> Lahore </a></li>
+                    </ul>
+                </div>
+                <div class="below">
+                    <h4> YOUR QUERIES </h4>
+                    <ul>
+                        <li><a href=""> Q/A's </a></li>
+                        <li><a href=""> Shipping </a></li>
+                        <li><a href=""> Ratings </a></li>
+                        <li><a href=""> Services </a></li>
+                    </ul>
+                </div>
+                <div class="below">
+                    <h4> SOCIALS </h4>
+                    <ul>
+                        <li><a href=""> Facebook </a></li>
+                        <li><a href=""> Instagram </a></li>
+                        <li><a href=""> TikTok </a></li>
+                        <li><a href=""> Twitter </a></li>
+                    </ul>
+                    </div>
+                    <div class="below">
+                        <h4> SOCIALS </h4>
+                        <ul>
+                            <li><a href=""> Facebook </a></li>
+                            <li><a href=""> Instagram </a></li>
+                            <li><a href=""> TikTok </a></li>
+                            <li><a href=""> Twitter </a></li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
